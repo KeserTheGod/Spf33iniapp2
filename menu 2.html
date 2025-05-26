@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Choix du Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    img.logo {
+      max-width: 200px;
+      margin: 20px auto 10px;
+      display: block;
+    }
+
+    h1 {
+      color: #ffd700;
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      display: block;
+      margin: 15px auto;
+      padding: 15px 30px;
+      background-color: #1e1e1e;
+      border: 1px solid #555;
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .button:hover {
+      background-color: #333;
+    }
+
+    .nav-menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #111;
+      display: flex;
+      justify-content: space-around;
+      padding: 12px 0;
+      border-top: 1px solid #333;
+      z-index: 1000;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-menu a span {
+      font-size: 22px;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <img src="https://i.postimg.cc/mkdQhj3m/0772880-B-4568-4-A25-9128-4837-E1-DB6-A90.png" alt="SPF 33 Logo" class="logo">
+
+    <h1>Choisis ton Menu</h1>
+
+    <a href="menu-douce.html" class="button">🍫🍯🍀 MENU DOUCE</a>
+    <a href="menu-dure.html" class="button">❄️🦄🍬 MENU DURE</a>
+  </main>
+
+  <div class="nav-menu">
+    <a href="index.html"><span>🏠</span>Home</a>
+    <a href="menu.html"><span>🏪</span>Menu</a>
+    <a href="https://ymd168.org/spf33" target="_blank"><span>💬</span>Potato</a>
+    <a href="https://chat.whatsapp.com/LApqkajKEjZJ9OI2yJBGN0" target="_blank"><span>🟢</span>WatsApp</a>
+  </div>
+
+</body>
+</html>
